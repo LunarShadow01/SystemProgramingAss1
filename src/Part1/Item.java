@@ -13,7 +13,7 @@ public class Item {
 
     public Item(String name, int value, boolean isMagical) {
         this.name = name;
-        this.value = value;
+        setValue(value);
         this.isMagical = isMagical;
     }
 
@@ -22,7 +22,19 @@ public class Item {
     }
 
     public void setValue(int value) {
-        this.value = value;
+        if (value < 0) {
+            this.value = 0;
+        } else {
+            this.value = value;
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isMagical() {
+        return isMagical;
     }
 
     @Override
