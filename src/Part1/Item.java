@@ -1,3 +1,5 @@
+package Part1;
+
 public class Item {
     private String name;
     private int value;
@@ -25,7 +27,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
+        return "Part1.Item{" +
                 "name='" + name + '\'' +
                 ", value=" + value +
                 ", isMagical=" + isMagical +
