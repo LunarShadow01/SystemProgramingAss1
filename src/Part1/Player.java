@@ -27,7 +27,9 @@ public class Player extends Character {
     public int calculateInventoryValue() {
         int total = 0;
         for (Item item : inventory) {
-            total += item.getValue();
+            if (item != null) {
+                total += item.getValue();
+            }
         }
         return  total;
     }
