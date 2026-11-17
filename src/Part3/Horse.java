@@ -1,3 +1,6 @@
+// Name: איליי בנזינו  ID: 326476827
+// Name: ______  ID: ______
+
 package Part3;
 
 public class Horse extends Thread {
